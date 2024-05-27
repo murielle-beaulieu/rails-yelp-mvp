@@ -1,0 +1,8 @@
+<h1>Definetly Legit Yelp</h1>
+<br>
+<%@restaurants.each do |restaurant|%>
+<ul><li><%=link_to restaurant.name, restaurant_path(restaurant)%></li></ul>
+<%end%>
+<br>
+<%= link_to "Create a new restaurant", new_restaurant_path %>
+<br>
